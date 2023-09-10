@@ -1,0 +1,15 @@
+# Fdb version 4
+["pdflatex"] 1693076598 "example.tex" "example.pdf" "example" 1693076599 2
+  "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1693012326 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1693011014 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1693013363 29940 9473d58112bc8a88f5505b823a053dde ""
+  "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1693009809 40967 d940221f8762fd5848760382d97d1226 ""
+  "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693017955 8172754 6521ad8f23d653163dc439df156c29e5 ""
+  "c:/texlive/2023/texmf.cnf" 1693017663 713 e69b156964470283e0530f5060668171 ""
+  "example.aux" 1693076599 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "example.tex" 1693076598 2525 11dad54c5d1f44f2ef3288df79150b3e ""
+  (generated)
+  "example.aux"
+  "example.log"
+  "example.pdf"
+  (rewritten before read)
