@@ -1,0 +1,31 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{amsmath}
+\tcbuselibrary{theorems}
+\sloppy
+\newtcbtheorem[number within=section]{mytheo}{Question}%
+{colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{th}
+
+\title{DiffyQ}
+\date{\vspace{-5ex}}
+\author{Unit 1}
+\begin{document}
+\maketitle
+
+\section{Some Basic Mathematical Models; Direction Fields} 
+\begin{itemize}
+	\item Describes the force from one charged particle onto another charged particle
+\end{itemize}
+		\[
+	\hat{F_{1,2}}=k\frac{q_1q_2}{r^2}\hat{r}
+\]
+\begin{itemize}
+	\item $\hat{F_{1,2}}$ = Force from point $q_1$ onto $q_2$, (Newtons)\\
+	\item k = $\frac{1}{4\pi\epsilon_0}$ = $9.0*10^9\frac{Nm^2}{C^2}$\\
+	\item $q_1,q_2$= Charge of $q_1$ and $q_2$respectively, (Coulombs)\\
+	\item r=Distance between the two charges, (Meters)\\
+	\item $\hat{r}$=Unit vector pointing in the direction of $F_{1,2}$
+\end{itemize}
+\end{document}

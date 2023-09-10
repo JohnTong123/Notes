@@ -1,0 +1,204 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{amsmath}
+\tcbuselibrary{theorems}
+\sloppy
+\newtcbtheorem[number within=section]{mytheo}{Question}%
+{colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{th}
+
+\title{Physics 212}
+\date{\vspace{-5ex}}
+\author{Exam 1 Study Guide}
+\begin{document}
+\maketitle
+
+\section{Coulomb's Law} 
+\begin{itemize}
+	\item Describes the force from one charged particle onto another charged particle
+\end{itemize}
+		\[
+	\hat{F_{1,2}}=k\frac{q_1q_2}{r^2}\hat{r}
+\]
+\begin{itemize}
+	\item $\hat{F_{1,2}}$ = Force from point $q_1$ onto $q_2$, (Newtons)\\
+	\item k = $\frac{1}{4\pi\epsilon_0}$ = $9.0*10^9\frac{Nm^2}{C^2}$\\
+	\item $q_1,q_2$= Charge of $q_1$ and $q_2$respectively, (Coulombs)\\
+	\item r=Distance between the two charges, (Meters)\\
+	\item $\hat{r}$=Unit vector pointing in the direction of $F_{1,2}$
+\end{itemize}
+
+
+
+\begin{mytheo}{Coulomb's law example}{theoexample}
+	Consider two particles, one carrying a charge of +1.5 nC and the other a charge of -2.0 nC, separated by a distance of 1.5 cm. Find the electric force which the positive charge exerts on the negative charge. n = $10^{-9}$
+\end{mytheo}
+Since we're attempting to find the electric force between two charges and are given our charges and distance, we can plug in our formula. Additionally, we're finding a value, so no need for vector hats or the unit vector r.\\
+\begin{align*}
+F_{1,2}&=k\frac{q_1q_2}{r^2}\hat{r}\\
+F_{1,2}&=9.0*10^9 \frac{Nm^2}{C^2}\frac{1.5*10^{-9}C * -2.0 * 10^{-9}C}{0.015m}\\
+F_{1,2}&= -1.8 * 10^{-6} N
+\end{align*}
+
+\subsection{Superposition}
+Since force is a vector, it can be added to other vectors to create a net force. This translates to Coulomb's law. If multiple charges create forces on a single charge, then the net force on that single charge is the sum all the forces acting upon it.
+$\sum_{a}^{b} F_{a} + F_{a+1} + F_{a+2} + \ldots + F_{b}$
+
+\begin{mytheo}{Superposition}{theoexample}
+Suppose we had two balls, $b_1$ and $b_2$, of mass M and with charges of +Q. $b_1$ is a distance d meters from $b_2$ and is currently directly above $b_2$. Calculate the $\hat{F_{y}}$ on $b_1$.  
+\end{mytheo}
+The two forces which play a part in affecting the balls are gravity and the electric force. Also, since there is no horizontal force, our net force is equal to $F_{y}$\\
+
+\begin{align*}
+	\hat{F_{y}} &= \hat{F_{g}} + \hat{F_{ef}}\\
+	\hat{F_{g}} &= -Mg \hat{j}\\
+	\hat{F_{ef}} &= k\frac{Q^2}{d^2}\hat{j}\\
+	\hat{F_{y}} &= (k\frac{Q^2}{d^2} - Mg)\hat{j}
+\end{align*}	
+\begin{mytheo}{Not fun}{theoexample}
+	If we placed a particle of mass M and of +Q a distance D away from a fixed charge of +Q, calculate the time it would take for the particle to reach a speed of v.
+\end{mytheo}
+
+\begin{align*}
+	F&=ma
+	a&=\frac{m}{F}
+	a&=\frac{M}{kq_1q_2\int\frac{1}{r^2}dr
+	v_{f} &= v_{i} t + \frac{1}{2} at^2
+	t^2 &= 2va
+	t^2 & = \frac{2vM}{\frac{kq_1q_1}{r^2}}
+v=v
+\end{align*}
+
+\section{Electric Fields}
+\begin{itemize}
+	\item Charges create electric fields
+	\item Electric fields emitted from a positive charge point outward, ones from a negative charge point inward
+	\item Two charges, one negative and one positive, are referred to as a dipole
+	\item To envision an electric field, imagine if a positive point charge was placed
+	\item On a graph, electric field line density determines relative magnitude, ie. more lines in an area means the magnitude of the electric field at that area is larger than the magnitude of the electric field of an area of equal size with fewer lines.
+\end{itemize}
+\[
+	E=\frac{F_{e}}{q_2} = \frac{kq_1}{r^2}
+\]	
+\begin{itemize}
+	\item Essentially, the electric field is equal to Coulomb's force but without the second charge
+	\item E = Strength of the Electric field in N/C
+\end{itemize}
+
+\begin{mytheo}{Electric Fields}{theoexample}
+	If we placed a charge of 5 C in an electric field with 900 N/C, what is the force exerted onto the charge? 
+\end{mytheo}
+
+\begin{align*}
+	E &= \frac{F_{e}}{q_2}\\
+	F_{e} &= E q_2\\
+	F_{e} &= 900 \frac{N}{C} * 5C\\
+	F_{e} &= 4500 N
+\end{align*}
+\subsection{Superposition}
+\begin{itemize}
+	\item lol electric fields add up
+\end{itemize}
+\section{Gauss's Law}
+\begin{itemize}
+	\item Gauss's law enables us to determine an electric field around an object. In order to do so, we create a surface called a Gaussian surface, around/surrounding the object.\\ 
+	\item Gauss's law essentially is referencing the flux, or the dot product of the electric field through an area made by the Gaussian surface, $EA \cos\theta$
+	\item It's important to sum the flux through every single part of the Gaussian surface,  pieces which are perpendicular to the Gaussian surface can be discarded because $\cos \frac{\pi}{2}=0$ 
+	\item A Gaussian surface is typically a 3D shape, usually a cylinder, rectangular prism, or sphere. 
+	\item For the sake of simplicity, we only uses Gauss's law when the electric field is even across a Gaussian surface. 
+	\item To  
+\end{itemize}
+\[
+	\int\vec{E}\cdot d\vec{A} = \frac{Q_{enc}}{\epsilon_0}
+\]
+\begin{itemize}
+	\item Basically the first half of this equation is just the flux
+	\item $\vec{E}$ = Electric Field and it's direction, C/N 
+	\item $d\vec{A}$ yea bro its the surface area 
+	\item $Q_{enc}$ = Total charge enclosed within the surface, C
+	\item $\epsilon_{0}$ = $8.854*10^{-12}\frac{C^2}{Nm^2}$
+	\item In words it just means the flux generated from the electric field and surface area is equal to the charge enclosed by the surface, divided by a constant
+\end{itemize}
+
+\begin{mytheo}{Gauss's Law}{theoexample}
+	Imagine something.
+\end{mytheo}
+
+\section{Electric Potential Energy}
+\[
+	\Delta U_{E} = -W_{E} = -qEr\cos{\theta}
+\]
+\begin{itemize}
+	\item $\Delta U_{E}$ = The change in the electrical potential energy of a charge
+	\item $W_{E}$ = Work done by an electrical force, Nm
+	\item q = Charge, coulombs
+	\item E = Strength of Electric Field
+	\item $\theta$ = angle between line from initial pos and final pos, to the direction of the electric field
+	 
+\end{itemize}
+\section{Electric Potential}
+\[
+	U_{E} = qV\\
+\]
+\begin{itemize}
+	\item $U_{E}$ pretty standard potential energy
+	\item q is charge
+	\item V is electric potential or the electric potential energy per unit charge, J/C or Volts
+	\item also correlates to $\Delta V = \frac{\Delta U_{E}}{q}$
+\end{itemize}
+\[
+	V=k \sum_{i}\frac{q_{i}}{r_{i}}
+\]
+\begin{itemize}
+	\item Essentially it's a repeat of superposition, must sum all electric potentials in an area  
+	\item Equipotential surfaces, surfaces of constant potential
+\end{itemize}
+
+
+\section{Conductors and Capacitance}
+\begin{itemize}
+	\item Conductor, a material that permits the flow of electrons, electrons can freely move
+	\item Charge typically is around edges
+	\item Insulator, electrons cannot move freely
+		\item Insulators have their charge spread out evenly
+	\item Semiconductors, a bit of both
+	\item idk where to put this so it goes here. If a conductive shell is present around a charge, the inner shell will be equal to that of the opposite of what is inside the shell. The outer shell will then work to do other stuff
+\end{itemize}
+\[
+C=\frac{Q}{\Delta V}
+\]
+\begin{itemize}
+	\item C = Capacitance of the Capacitor expressed in farads
+	\item Q = Charges of plates
+	\item V = Potential Energy
+\end{itemize}
+\section{Capacitors}
+	\[
+		C=k\frac{\epsilon_{0}A}{d}
+	\]
+	\begin{itemize}
+		\item Here k represents the dielectric constant, usually it's just a vaccum constant
+		\item $\epsilon_{0} = $ it's j the constant from earlier
+		\item A = area of one parallel plate
+		\item d = Distance between the parallel plates
+		\item The above is the Parallel plate capacitor equation
+		\item Basically capacitors work because one side has a lot of negative and the other has a lot of positive charge
+		\item Capacitors store charge, when the battery 
+		\item For capacitors in parallel, net capacitance is the sum of the capacitors in parallel
+		\item $\sum_{a}^{b} C_{net} = C_{a}+C_{a+1}+\ldots+C_{b}$
+		\item Capacitors in series circuit must be added like a resistor in parallel
+		\item $\frac{1}{C_{s}} = \sum_{i}\frac{1}{C_{i}}$
+	\end{itemize}
+\[
+	U_{c} = \frac{1}{2} Q \Delta V = \frac{1}{2} C \Delta V^2
+\]
+\begin{itemize}
+	\item Energy stored in a capacitor
+
+\end{itemize}
+	
+\includegraphics{bruh}
+
+
+\end{document}
