@@ -1,0 +1,124 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{amsmath}
+\tcbuselibrary{theorems}
+\sloppy
+\newtcbtheorem[number within=section]{mytheo}{Question}%
+{colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{th}
+
+\title{Physics 212}
+\date{\vspace{-5ex}}
+\author{Exam 2 Study Guide}
+\begin{document}
+\maketitle
+\section{Capacitors}
+\subsection{Main Concepts}
+\begin{itemize}
+	\item Capacitors in series have the same current. 
+	\item The formula for total capacitance in series is $\frac{1}{C_{12}} =\frac{1}{C_1} + \frac{1}{C_2}$  
+	i\item Capacitors in parallel have the same voltage.
+\item The formula for total capacitance in parallel is $C_{12} = C_1 + C_2$
+
+\end{itemize}
+\section{Electric Current}
+\subsection{Main Concepts}
+\begin{itemize}
+		\item The resistance of a resistor is calculated by $R=\frac{L}{\sigma A}$
+		\item R = Resistance, L = length, A = Cross-sectional Area, $\sigma =$ Resistivity.
+		\item Resistors in series have the same current.
+		\item The formula for total resistance in series is $R_{12} = R_1 + R_2$
+		\item Resistors in parallel have the same voltage/
+		\item The formula for total resistance in parallel is $\frac{1}{R_{12}} = \frac{1}{R_1} + \frac{1}{R_2}$
+		\item Ohm's Law is V=IR
+		\item $J = \sigma E$
+		\item J is current density at a location, $\sigma$ is conductivity, E is electric field at that location
+		\item Electric Current is $ I = \frac{dq}{dt}$
+		\item $ P = IV$
+		\item P = Power, I = Current, V = Voltage
+\end{itemize}
+\section{Kirchoff's Rules}
+\subsection{Main Concepts}
+\begin{itemize}
+	\item Kirchoff's Voltage Law, In a closed loop $\Sigma\Delta V_n = 0 $
+	\item Kirchoff's Current Law, at any node $\Sigma I_{in} = \Sigma I_{out}$ 
+\end{itemize}
+\section{RC Circuits}
+\subsection{Main Concepts}
+\begin{itemize}
+	\item Resistors will cause capacitance to slowly gain voltage and slowly lose voltage once unplugged.
+	\item Discharging Charge: $Q_0e^{-\frac{t}{RC}}$
+	\item Charging Charge: $Q_{/infty}1-e^{-\frac{t}{RC}}$
+	\item Discharging Current: $I_0e^{-\frac{t}{RC}}$
+	\item Charging Current: $I_0e^{\frac{-t}{RC}}$
+	\item Discharging Voltage: $V_0e^{-\frac{t}{RC}}$
+	\item Charging Voltage: $V_{\infty}(1-e^{-\frac{t}{RC}})$
+
+
+\end{itemize}
+\subsection{Proof of Charge relationship}
+\begin{align*}
+	\Sigma V &= 0\\
+	V_{r} + V_{c} &= 0\\
+	\frac{dQ}{dt}R  &= - \frac{Q}{C}\\
+	\frac{1}{Q}RdQ R &= -\frac{1}{C}dt\\
+	\int^{final}_{0} \frac{R}{Q}dQ &= -\int \frac{1}{c}dt\\
+	R\ln \frac{Q_{final}}{Q_0} &= -\frac{t}{c}\\
+	\ln \frac{Q_{final}}{Q_0} &= -\frac{t}{RC}\\
+	\frac{Q_{final}}{Q_0} &= e^{-\frac{t}{RC}}\\
+	Q_{final} &= Q_0 e^{-\frac{t}{RC}}
+\end{align*}
+\section{Magnetism}
+\subsection{Main Concepts}
+\begin{itemize}
+	\item Magnetic fields create electric Currents
+	\item Magnetic Fields exert forces on electric currents (the charges in motion)
+	\item $\vec F = q \vec v x \vec B$
+	\item Force on a particle  = the charge of particle multiplied by the cross product of its velocity and the magnetic field
+	\item Right hand rule! Index finger is v, other is B, thumb is F!
+\end{itemize}
+
+\section{Forces and Torques on Currents}
+\subsection{Main Concepts}
+\begin{itemize}
+	\item $\vec F = I \vec L x \vec B$
+	\item F = Force, I = current, L = length, B = Magnetic field
+	\item $\vec \mu = NI \vec A$
+	\item $\mu$ = Dipole moment N = num of coils, I = current A = Area 
+	\item $\vec\tau = \vec\mu x \vec B $
+	\item $\tau$ = Torque, $\mu$ = Magnetic Dipole Moment, B = Magnetic Field
+	\item $\Delta U = -\vec\mu\cdot\vec B$
+
+	i 
+\end{itemize}
+\section{Biot-Savart Law}
+\subsection{Main Concepts}
+\begin{itemize}
+	\item $\vec dB = \frac{\mu_0 I}{4 \pi} \frac{\vec ds x \vec r}{r^2}$
+	\item \vec Infinite Line : $B= \frac{\mu_0 I}{2 \pi r}$
+	\item Current Loop: $ B = \frac{\mu_0 I }{2} \frac{R^2}{(R^2 + z^2)^\frac{3}{2}}$
+	\item 
+\end{itemize}
+\section{Ampere's Law}
+\subsection{Main Concepts}
+\begin{itemize}
+	\item $\int \vec B \cdot \vec dl = \mu_0 I_{enclosed}$
+	\item For a solenoid: $B = \frac{\mu_0nI}{2}$
+\end{itemize}
+\section{Motional EMF}
+\subsection{Main Concepts}
+\begin{itemize}
+	\item $\vec F = q\vec v = \vec B$
+\end{itemize}
+
+\section{Faraday's Law}
+\subsection{Main Concepts}
+\begin{itemize}
+	\item $\Phi = \int \vec B \cdot \vec dA$
+	\item $\varepsilon = -\frac{d\Phi}{dt} = \int \vec E \cdot \vec dl$
+\end{itemize}
+
+
+
+\end{document}
