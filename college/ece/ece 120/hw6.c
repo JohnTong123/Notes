@@ -1,8 +1,5 @@
 
 #include <stdio.h>
-
-
-
 int main()
 {
     unsigned int a, b, c, d,e,k;
@@ -21,9 +18,8 @@ int main()
             /* Loop over d in binary order.*/
                 for (e = 0; 2 > e; e = e + 1) {
                     d=e^c;    
-                    // f=b&(~c)|~b&~a&~c&1; SOP FORM
-                    // f= (1&(~a&~b))|(1&(~b&~c))|(1&(~c&~d)|(1&(~a&~d))); //POS FORM 
-                    f= ((b|c))&(1&(~a | c | ~d));
+                    f= (1&(~a&~b))|(1&(~b&~c))|(1&(~c&d)|(1&(~a&~d))); 
+                    // f= ((b|c))&(1&(~a | c | ~d));
                     printf(" %u",f);
                 /* Use variables b and d to calculate *
                 * input variable c (iterated in *
